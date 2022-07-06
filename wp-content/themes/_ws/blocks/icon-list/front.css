@@ -1,0 +1,18 @@
+@import '../../src/css/front/modules/variables.css';
+
+.wp-block-ws-icon-list {
+  list-style: none;
+  li {
+    display: flex;
+    align-items: flex-start;
+    + li {
+      margin-top: 15px;
+    }
+  }
+  svg {
+    width: 20px;
+    height: 20px;
+    flex: none;
+    margin: 2px 20px 0 0;
+  }
+}

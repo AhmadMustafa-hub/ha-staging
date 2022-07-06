@@ -1,0 +1,19 @@
+@import '../../src/css/front/modules/variables.css';
+
+.wp-block-ws-social-links {
+  display: flex;
+  align-items: center;
+  margin: -5px -10px $default-margin;
+  a {
+    padding: 5px;
+    margin: 0 5px;
+  }
+  svg {
+    display: block;
+  }
+  .has-white-color & {
+    svg {
+      fill: #fff;
+    }
+  }
+}

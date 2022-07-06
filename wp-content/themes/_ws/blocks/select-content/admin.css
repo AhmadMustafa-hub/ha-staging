@@ -1,0 +1,11 @@
+@import '../../src/css/admin/modules/variables.css';
+
+.ws-block-select-content {
+  .button-control-row {
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .wp-block-button__link {
+    margin: 0;
+  }
+}

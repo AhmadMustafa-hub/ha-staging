@@ -1,0 +1,21 @@
+@import '../../src/css/admin/modules/variables.css';
+
+.ws-block-icon-list {
+  .icon-list-item {
+    display: flex;
+    align-items: center;
+    .components-svg-picker {
+      margin-right: 10px;
+      .components-base-control__field {
+        margin: 0;
+      }
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    p {
+      margin: 0;
+    }
+  }
+}

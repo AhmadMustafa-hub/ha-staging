@@ -1,0 +1,65 @@
+@import '../../src/css/front/modules/variables.css';
+
+.wp-block-ws-form {
+  margin-bottom: 0;
+  form {
+    margin: 0;
+  }
+  .form-msg {
+    display: none;
+  }
+}
+
+.hs_error_rollup {
+  display: none;
+}
+
+.hbspt-form .hs-form {
+  fieldset {
+    max-width: none;
+    width: calc(100% + 20px);
+    margin: 0 -10px;
+    > * {
+      padding: 0 10px;
+    }
+    &.form-columns-2 {
+      > .hs-form-field {
+        @media (--xs-down) {
+          width: 100%;
+        }
+      }
+    }
+    &[class*='form-columns'] {
+      .input {
+        margin-right: 0;
+      }
+      .hs-input {
+        width: 100%;
+        &[type=checkbox], &[type=radio] {
+          width: auto;
+        }
+      }
+    }
+  }
+  .hs-error-msgs {
+    list-style: none;
+    margin: -$input-margin 0 20px;
+    label {
+      font-size: 14px;
+      opacity: 1;
+    }
+  }
+  .inputs-list {
+    list-style: none;
+    margin-left: 0;
+    .hs-form-checkbox {
+      margin-top: 10px;
+    }
+  }
+  .hs-form-checkbox-display {
+    display: flex;
+  }
+  .hs-recaptcha {
+    margin: 0 0 $input-margin;
+  }
+}

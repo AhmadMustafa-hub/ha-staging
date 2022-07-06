@@ -1,0 +1,40 @@
+@import '../../src/css/admin/modules/variables.css';
+
+.ws-block-tiles {
+  .tile-grid {
+    > .block-editor-inner-blocks {
+      > .block-editor-block-list__layout {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        > * {
+          width: 100%;
+          margin: 0;
+          grid-column-end: span 1;
+          grid-row-end: span 1;
+          &.one-two {
+            grid-row-end: span 2;
+          }
+          &.two-one {
+            grid-column-end: span 2;
+          }
+          &.two-two {
+            grid-column-end: span 2;
+            grid-row-end: span 2;
+          }
+          > .ws-block-container-tile {
+            height: 100%;
+            border: 1px solid rgba(#000, 0.1);
+          }
+        }
+        > .block-list-appender {
+          align-self: center;
+          .block-editor-button-block-appender {
+            width: auto;
+            background: none;
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+}

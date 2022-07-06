@@ -1,0 +1,12 @@
+@import '../../src/css/admin/modules/variables.css';
+
+.ws-block-side-attached {
+  margin-right: -20px !important;
+  > .ws-block-container {
+    border: 1px solid $border-color;
+  }
+  &.is-style-left {
+    margin-right: 0 !important;
+    margin-left: -20px;
+  }
+}

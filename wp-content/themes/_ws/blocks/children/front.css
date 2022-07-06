@@ -1,0 +1,8 @@
+@import '../../src/css/front/modules/variables.css';
+
+.wp-block-ws-children {
+  margin: 0;
+  + * {
+    margin-top: calc($grid-padding * 2 - $default-margin);
+  }
+}

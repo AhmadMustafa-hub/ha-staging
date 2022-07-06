@@ -1,0 +1,29 @@
+@import '../../src/css/front/modules/variables.css';
+
+.ws-block-social-share {
+  margin: 0 0 $default-margin;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 450px;
+  h3 {
+    margin: 10px 40px 10px 0;
+  }
+  .share-buttons {
+    min-width: 120px;
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .share-button {
+    display: block;
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+  }
+  svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}

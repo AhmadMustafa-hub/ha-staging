@@ -1,0 +1,12 @@
+@import '../../src/css/front/modules/variables.css';
+
+.wp-block-ws-event {
+  border-bottom: 1px solid $border-color;
+  .subhead {
+    color: $ocean;
+  }
+  h3 {
+    @include h(4);
+    margin-top: $default-margin;
+  }
+}

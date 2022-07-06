@@ -1,0 +1,7 @@
+@import '../../src/css/admin/modules/variables.css';
+
+.ws-block-big-card {
+  .components-media-preview {
+    height: 400px;
+  }
+}

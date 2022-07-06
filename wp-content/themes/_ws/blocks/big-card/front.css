@@ -1,0 +1,54 @@
+@import '../../src/css/front/modules/variables.css';
+
+.wp-block-ws-big-card {
+  position: relative;
+  margin-bottom: calc($grid-padding * 2);
+  .parallax-background {
+    height: 600px;
+  }
+  &::before {
+    content: '';
+    display: block;
+    background: #fff;
+    box-shadow: $card-shadow;
+    position: absolute;
+    z-index: -1;
+    top: -$grid-padding;
+    right: -$grid-padding;
+    bottom: -$grid-padding;
+    left: -$grid-padding;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  &:hover {
+    &::before {
+      opacity: 1;
+    }
+    h3 {
+      color: $moss;
+    }
+    svg {
+      transform: translateX(5px);
+    }
+  }
+  h3 {
+    margin: $default-margin 0;
+    a {
+      text-decoration: none;
+    }
+    svg {
+      display: inline-block;
+      margin-left: 8px;
+      transition: transform 0.3s;
+    }
+  }
+  p {
+    margin: 0;
+  }
+  a::before {
+    top: -$grid-padding;
+    right: -$grid-padding;
+    bottom: -$grid-padding;
+    left: -$grid-padding;
+  }
+}

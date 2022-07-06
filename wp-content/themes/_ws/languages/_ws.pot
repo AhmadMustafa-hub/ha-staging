@@ -1,0 +1,186 @@
+# Copyright (C) 2020 _ws
+# This file is distributed under the same license as the _ws package.
+msgid ""
+msgstr ""
+"Project-Id-Version: _ws\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../404.php:10, ../inc/head.php:5
+msgid "Page Not Found"
+msgstr ""
+
+#: ../comments.php:13
+msgid "Comments"
+msgstr ""
+
+#: ../comments.php:18, ../comments.php:36
+msgid "Comment navigation"
+msgstr ""
+
+#: ../comments.php:20, ../comments.php:38
+msgid "Older Comments"
+msgstr ""
+
+#: ../comments.php:21, ../comments.php:39
+msgid "Newer Comments"
+msgstr ""
+
+#: ../comments.php:48
+msgid "Comments are closed."
+msgstr ""
+
+#: ../functions.php:29
+msgid "Header"
+msgstr ""
+
+#: ../functions.php:32
+msgid "Footer"
+msgstr ""
+
+#: ../functions.php:35
+msgid "Footer Legal"
+msgstr ""
+
+#: ../functions.php:79
+msgid "Footer Left"
+msgstr ""
+
+#: ../functions.php:81
+msgid "Widgets in this area will appear in the left side of the footer"
+msgstr ""
+
+#: ../header.php:34
+msgid "Skip to content"
+msgstr ""
+
+#: ../header.php:70, ../header.php:72
+msgid "Toggle Menu"
+msgstr ""
+
+#: ../offline.php:10
+msgid "Offline"
+msgstr ""
+
+#: ../offline.php:11
+msgid "We are unable to complete your request without a network connection. Please try again once you have reestablished connectivity."
+msgstr ""
+
+#: ../search.php:10
+msgid "Search Results: <span>%s</span>"
+msgstr ""
+
+#: ../inc/blocks.php:14
+msgid "Normal"
+msgstr ""
+
+#: ../inc/blocks.php:15
+msgid "M"
+msgstr ""
+
+#: ../inc/blocks.php:42
+msgid "Top Level (WS)"
+msgstr ""
+
+#: ../inc/blocks.php:46
+msgid "Layout (WS)"
+msgstr ""
+
+#: ../inc/blocks.php:50
+msgid "Dynamic (WS)"
+msgstr ""
+
+#: ../inc/blocks.php:54
+msgid "Bits (WS)"
+msgstr ""
+
+#: ../inc/blocks.php:58
+msgid "Metas (WS)"
+msgstr ""
+
+#: ../inc/blocks.php:62
+msgid "Calculator (WS)"
+msgstr ""
+
+#: ../inc/head.php:9
+msgid "Search Results"
+msgstr ""
+
+#: ../inc/head.php:44
+msgid "Learn more about Haley & Aldrich team member %s's role in helping clients solve their most pressing environmental and geotechnical engineering challenges."
+msgstr ""
+
+#: ../inc/media.php:5
+msgid "Small"
+msgstr ""
+
+#: ../inc/menu.php:47
+msgid "Toggle Sub Menu"
+msgstr ""
+
+#: ../inc/menu.php:302, ../inc/menu.php:312
+msgid "Heading"
+msgstr ""
+
+#: ../inc/menu.php:303, ../inc/menu.php:315, ../blocks/archive/render.php:81
+msgid "Search"
+msgstr ""
+
+#: ../inc/shortcodes.php:14
+msgid "Watch Video"
+msgstr ""
+
+#: ../inc/shortcodes.php:28
+msgid "Name"
+msgstr ""
+
+#: ../inc/shortcodes.php:30
+msgid "Email"
+msgstr ""
+
+#: ../inc/shortcodes.php:32
+msgid "Message"
+msgstr ""
+
+#: ../inc/shortcodes.php:39
+msgid "Submit"
+msgstr ""
+
+#: ../parts/archive-page.php:10
+msgid "Overview"
+msgstr ""
+
+#: ../parts/archive-project.php:21, ../blocks/featured-post/render.php:31
+msgid "View"
+msgstr ""
+
+#: ../parts/single-person.php:53
+msgid "Back to Our People"
+msgstr ""
+
+#: ../post-types/publication.php:26
+msgid "Add Link"
+msgstr ""
+
+#: ../post-types/publication.php:28, ../post-types/publication.php:41
+msgid "This is where the tag will link when displayed on a post."
+msgstr ""
+
+#: ../post-types/publication.php:37
+msgid "Link"
+msgstr ""
+
+#: ../blocks/archive/render.php:28
+msgid "Filter by Year"
+msgstr ""
+
+#: ../blocks/archive/render.php:50
+msgid "Past & Upcoming"
+msgstr ""

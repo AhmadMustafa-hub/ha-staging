@@ -1,0 +1,14 @@
+@import '../../src/css/admin/modules/variables.css';
+
+.ws-block-social-share {
+  .social-share {
+    display: flex;
+    align-items: center;
+    > svg {
+      fill: #aaa;
+      width: 18px;
+      height: 18px;
+      margin: 0 0 8px 10px;
+    }
+  }
+}

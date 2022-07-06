@@ -1,0 +1,23 @@
+@import '../../src/css/admin/modules/variables.css';
+
+.ws-block-meta-author {
+  .profile-pic {
+    position: relative;
+    margin: 0 $grid-padding;
+    > img {
+      width: 96px;
+      height: 96px;
+    }
+    .components-media-selector {
+      position: relative;
+      z-index: 2;
+      transition: 0.3s ease-in-out;
+    }
+  }
+  .person-block {
+    margin: 0 0 15px;
+    button {
+      margin-top: 10px;
+    }
+  }
+}

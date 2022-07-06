@@ -1,0 +1,31 @@
+@import '../../src/css/admin/modules/variables.css';
+
+.ws-block-testimonial {
+  .testimonial {
+    @include row;
+    align-items: center;
+    flex-wrap: nowrap;
+    &.is-style-reverse {
+      flex-direction: row-reverse;
+    }
+  }
+  .image {
+    @include col;
+    flex: none;
+  }
+  .quote-citation {
+    @include col;
+    flex: 1 1 auto;
+  }
+  .quote {
+    font-size: 20px;
+  }
+  @media (--sm-down) {
+    .testimonial {
+      flex-wrap: wrap;
+    }
+    .quote {
+      @include col-size(12);
+    }
+  }
+}

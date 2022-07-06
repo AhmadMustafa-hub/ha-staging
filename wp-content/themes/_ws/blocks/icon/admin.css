@@ -1,0 +1,32 @@
+@import '../../src/css/admin/modules/variables.css';
+
+.ws-block-icon {
+  .side-text {
+    display: flex;
+    > *:first-child {
+      flex: none;
+    }
+    > *:last-child {
+      flex: 1 1 auto;
+      margin-left: 10px;
+    }
+  }
+  @at-root {
+    .block-editor-url-input input[type=text] {
+      max-width: 100%;
+    }
+  }
+  .components-svg-picker {
+    @each $hex $color in $colors {
+      &.has-$(color)-color {
+        svg {
+          stroke-width: 0;
+          * {
+            fill: $hex !important;
+            stroke: $hex !important;
+          }
+        }
+      }
+    }
+  }
+}

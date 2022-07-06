@@ -1,0 +1,15 @@
+@import '../../src/css/admin/modules/variables.css';
+
+.ws-block-spacer {
+  .spacer {
+    height: 100px;
+    &.spacer-50 {
+      height: 50px;
+    }
+  }
+  &.is-selected {
+    .spacer {
+      background: #eee;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "global": {
+    "colors": [
+      {
+        "name": "Black",
+        "slug": "black",
+        "color": "#333333"
+      },
+      {
+        "name": "Moss",
+        "slug": "moss",
+        "color": "#658d1b"
+      },
+      {
+        "name": "Lake",
+        "slug": "lake",
+        "color": "#3eb1c8"
+      },
+      {
+        "name": "Mist",
+        "slug": "mist",
+        "color": "#e8f6f9"
+      },
+      {
+        "name": "Fog",
+        "slug": "gray",
+        "color": "#cccccc"
+      },
+      {
+        "name": "White",
+        "slug": "white",
+        "color": "#ffffff"
+      }
+    ],
+    "gradients": [
+      {
+        "name": "Lake→Ocean",
+        "slug": "blue",
+        "start": "#3eb1c8",
+        "end": "#165c7d"
+      }
+    ]
+  }
+}

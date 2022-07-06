@@ -1,0 +1,46 @@
+@import '../../src/css/front/modules/variables.css';
+
+.wp-block-ws-person {
+  display: flex;
+  align-items: center;
+  margin-bottom: calc($default-margin / 2);
+  @media (--xs-down) {
+    display: inline-block;
+  }
+  .person-image, .placeholder {
+    @include gradient(blue);
+    flex: none;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 20px calc($default-margin / 2) 0;
+  }
+  .person-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0 0 calc($default-margin / 2);
+    p.button-simple {
+      &:hover {
+        color: $text-color;
+      }
+    }
+    p:not(.button-simple) {
+      opacity: 0.6;
+    }
+    > * {
+      margin: 0;
+      + * {
+        margin-top: 10px;
+      }
+    }
+  }
+  .social-links {
+    display: flex;
+    a {
+      margin: 0 20px 0 0;
+    }
+  }
+}

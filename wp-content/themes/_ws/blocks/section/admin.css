@@ -1,0 +1,23 @@
+@import '../../src/css/admin/modules/variables.css';
+
+.ws-block-section {
+  > .ws-block-container {
+    padding: 10px 20px;
+    border: 1px dashed $border-color;
+  }
+  &.is-style-narrow {
+    > .ws-block-container {
+      padding: 0 10%;
+    }
+  }
+  &.is-style-slim {
+    > .ws-block-container {
+      padding: 0 5%;
+    }
+  }
+  &.is-style-wide {
+    > .ws-block-container {
+      margin: 0 -20px;
+    }
+  }
+}

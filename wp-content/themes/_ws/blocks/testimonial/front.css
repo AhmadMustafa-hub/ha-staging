@@ -1,0 +1,49 @@
+@import '../../src/css/front/modules/variables.css';
+
+.wp-block-ws-testimonial {
+  blockquote {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 0;
+    @media (--md-up) {
+      flex-wrap: nowrap;
+      .quote-image {
+        flex: none;
+        margin: 0 calc($grid-padding * 2) 0 0;
+      }
+    }
+  }
+  &.is-style-reverse {
+    blockquote {
+      flex-direction: row-reverse;
+      @media (--md-up) {
+        .quote-image {
+          margin: 0 0 0 calc($grid-padding * 2);
+        }
+      }
+    }
+  }
+  .quote-image {
+    flex: 1 1 100%;
+    margin: 0 auto $default-margin;
+    @media (--sm-down) {
+      width: 100%;
+    }
+  }
+  .quote-citation {
+    flex: 1 1 100%;
+  }
+  .quote {
+    @include h(4);
+    margin: 0;
+  }
+  cite {
+    @include subhead;
+    display: inline-block;
+    margin: $default-margin 0 0;
+  }
+  .cite-link {
+    @include button-simple;
+  }
+}

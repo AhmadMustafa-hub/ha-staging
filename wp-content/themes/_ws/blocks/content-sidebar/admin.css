@@ -1,0 +1,18 @@
+@import '../../src/css/admin/modules/variables.css';
+
+.ws-block-content-sidebar {
+  .block-row {
+    > .editor-inner-blocks {
+      > .editor-block-list__layout {
+        > .editor-block-list__block {
+          &:first-child {
+            @include col-size(7);
+          }
+          &:last-child {
+            @include col-size(5);
+          }
+        }
+      }
+    }
+  }
+}

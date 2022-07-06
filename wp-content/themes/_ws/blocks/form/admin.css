@@ -1,0 +1,8 @@
+@import '../../src/css/admin/modules/variables.css';
+
+.ws-block-form {
+  fieldset {
+    padding: 5px;
+    border: 1px solid #ddd;
+  }
+}

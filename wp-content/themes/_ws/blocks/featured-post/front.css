@@ -1,0 +1,14 @@
+@import '../../src/css/front/modules/variables.css';
+
+.wp-block-featured-post {
+  margin-bottom: calc($grid-padding * 2);
+  + .ws-block-archive {
+    margin-top: calc($grid-padding * 4);
+  }
+  .featured-heading {
+    margin-top: 0;
+    @media (--md-up) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@import '../../src/css/admin/modules/variables.css';
+
+.ws-block-collage {
+  &.is-style-windows {
+    .collage-row > * {
+      @media (--md-up) {
+        @include col-size(6);
+      }
+    }
+  }
+}

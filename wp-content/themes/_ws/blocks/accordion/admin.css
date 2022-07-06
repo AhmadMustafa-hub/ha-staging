@@ -1,0 +1,7 @@
+@import '../../src/css/admin/modules/variables.css';
+
+.ws-block-accordion {
+  .accordion-panel {
+    padding: 0 20px;
+  }
+}

@@ -1,0 +1,11 @@
+@import '../../src/css/admin/modules/variables.css';
+
+.ws-block-markets-services {
+  .card {
+    background: rgba(#fff, 0.3);
+    box-shadow: none;
+    + .card {
+      margin-top: 20px;
+    }
+  }
+}

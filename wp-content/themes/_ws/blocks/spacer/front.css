@@ -1,0 +1,18 @@
+@import '../../src/css/front/modules/variables.css';
+
+.ws-block-spacer {
+  height: calc($section-padding - $default-margin);
+  margin: 0;
+  &.spacer-50 {
+    height: calc($section-padding / 2 - $default-margin);
+  }
+  + * {
+    margin-top: 0;
+  }
+  .main > & {
+    height: $section-padding;
+    &.spacer-50 {
+      height: calc($section-padding / 2);
+    }
+  }
+}

@@ -1,0 +1,30 @@
+@import '../../src/css/front/modules/variables.css';
+
+.wp-block-ws-card {
+  &.is-style-dark {
+    background-color: $lake;
+    color: #fff;
+    a {
+      color: #fff;
+    }
+  }
+  &.image-right {
+    @media (--md-up) {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: stretch;
+      .object-fit-container, .featured-image {
+        width: 200px;
+        height: auto;
+        flex: none;
+      }
+    }
+  }
+  &.extra-padding {
+    > .card-body {
+      @media (--lg-up) {
+        padding: 80px 80px calc(80px - $default-margin);
+      }
+    }
+  }
+}

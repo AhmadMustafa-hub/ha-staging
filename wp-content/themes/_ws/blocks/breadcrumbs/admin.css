@@ -1,0 +1,9 @@
+@import '../../src/css/admin/modules/variables.css';
+
+.ws-block-breadcrumbs {
+  text-transform: uppercase;
+  font-size: 14px;
+  .separator {
+    margin: 0 5px;
+  }
+}

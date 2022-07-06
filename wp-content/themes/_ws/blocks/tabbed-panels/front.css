@@ -1,0 +1,38 @@
+@import '../../src/css/front/modules/variables.css';
+
+.wp-block-ws-tabbed-panels {
+  .tabs {
+    display: flex;
+    margin: 0 0 $grid-padding;
+    border-bottom: 1px solid $lake;
+  }
+  .tab {
+    flex: 1 1 auto;
+    background: transparent;
+    margin: 0 0 -3px;
+    border-radius: 0;
+    color: $text-color;
+    outline: none;
+    border-bottom: 5px solid transparent;
+    &.current {
+      border-color: $lake;
+    }
+  }
+  .panel {
+    margin-top: calc($default-margin * 2);
+  }
+  @media (--sm-down) {
+    .tabs {
+      flex-wrap: wrap;
+    }
+    .tab {
+      flex: none;
+      width: 100%;
+    }
+  }
+  @media (--xs-down) {
+    .tab {
+      min-width: 40%
+    }
+  }
+}

@@ -1,0 +1,142 @@
+@import '../../src/css/front/modules/variables.css';
+
+.wp-block-ws-split {
+  margin: 0;
+  @include row;
+  &.row-reverse {
+    flex-direction: row-reverse;
+  }
+  > .wp-block-ws-split-half {
+    @include col;
+    @include col-size(12);
+    @media (--lg-up) {
+      @include col-size(6);
+    }
+  }
+  &.split-padding:not(.variant-large-right):not(.variant-large-left) {
+    @media (--xl-up) {
+      > .wp-block-ws-split-half:nth-child(1) {
+        @include col-size(5);
+      }
+      > .wp-block-ws-split-half:nth-child(2) {
+        @include col-size(5);
+        @include col-offset(2);
+      }
+      &.row-reverse {
+        > .wp-block-ws-split-half:nth-child(1) {
+          @include col-size(5);
+          @include col-offset(2);
+        }
+        > .wp-block-ws-split-half:nth-child(2) {
+          @include col-size(5);
+          @include col-offset(0);
+        }
+      }
+    }
+  }
+  &.variant-large-right {
+    @media (--xl-up) {
+      > .wp-block-ws-split-half:nth-child(1) {
+        @include col-size(5);
+      }
+      > .wp-block-ws-split-half:nth-child(2) {
+        @include col-size(7);
+      }
+      &.split-padding {
+        > .wp-block-ws-split-half:nth-child(2) {
+          @include col-size(6);
+          @include col-offset(1);
+        }
+        &.row-reverse {
+          > .wp-block-ws-split-half:nth-child(1) {
+            @include col-size(6);
+            @include col-offset(1);
+          }
+          > .wp-block-ws-split-half:nth-child(2) {
+            @include col-size(5);
+            @include col-offset(0);
+          }
+        }
+      }
+      &.row-reverse {
+        > .wp-block-ws-split-half:nth-child(1) {
+          @include col-size(7);
+        }
+        > .wp-block-ws-split-half:nth-child(2) {
+          @include col-size(5);
+        }
+      }
+    }
+  }
+  &.variant-large-left {
+    @media (--xl-up) {
+      > .wp-block-ws-split-half:nth-child(1) {
+        @include col-size(7);
+      }
+      > .wp-block-ws-split-half:nth-child(2) {
+        @include col-size(5);
+      }
+      &.split-padding {
+        > .wp-block-ws-split-half:nth-child(1) {
+          @include col-size(6);
+        }
+        > .wp-block-ws-split-half:nth-child(2) {
+          @include col-offset(1);
+        }
+        &.row-reverse {
+          > .wp-block-ws-split-half:nth-child(1) {
+            @include col-size(5);
+            @include col-offset(1);
+          }
+          > .wp-block-ws-split-half:nth-child(2) {
+            @include col-size(6);
+            @include col-offset(0);
+          }
+        }
+      }
+      &.row-reverse {
+        > .wp-block-ws-split-half:nth-child(1) {
+          @include col-size(5);
+        }
+        > .wp-block-ws-split-half:nth-child(2) {
+          @include col-size(7);
+        }
+      }
+    }
+  }
+}
+
+.wp-block-ws-split-half {
+  @include col-size(12);
+  margin: 0;
+  position: relative;
+  > *:first-child {
+    margin-top: 0;
+  }
+  &.overflow-top {
+    margin-top: calc(-1.5 * $section-padding);
+  }
+  &.overflow-bottom {
+    margin-bottom: calc(-1.5 * $section-padding);
+  }
+  @each $padding in $padding-options {
+    @if $padding >= 0 {
+      .padding-top-$(padding) &.overflow-top {
+        margin-top: calc((-$section-padding * ($padding / 100)) - ($section-padding / 2));
+        @media (--md-down) {
+          &:last-child {
+            margin-top: 0;
+          }
+        }
+      }
+      .padding-bottom-$(padding) &.overflow-bottom {
+        margin-bottom: calc((-$section-padding * ($padding / 100)) - ($section-padding / 2));
+        @media (--md-down) {
+          &:first-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}

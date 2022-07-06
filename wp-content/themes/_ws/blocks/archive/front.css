@@ -1,0 +1,51 @@
+@import '../../src/css/front/modules/variables.css';
+
+.ws-block-archive {
+  position: relative;
+  padding: 0;
+  .archive-filters {
+    margin-bottom: 0;
+    label {
+      font-size: 14px;
+      display: table;
+    }
+    select, .listbox > button, input {
+      color: $text-color;
+      padding-left: 0;
+    }
+  }
+  #archive-search {
+    padding-right: 25px;
+  }
+  .search-icon {
+    position: absolute;
+    fill: $text-color;
+    bottom: calc($default-margin + 10px);
+    right: $grid-padding;
+    width: 18px;
+    height: 18px;
+    pointer-events: none;
+  }
+  .archive-results {
+    margin-top: $default-margin;
+    /* #archive-loading-display {
+      text-align: -webkit-center;
+    } */
+  }
+}
+
+.loading {
+  display: inline-block;
+  border: 5px solid #ccc;
+  border-top: 5px solid #999;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  animation: loading 2s linear infinite;
+}
+
+@keyframes loading {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

@@ -1,0 +1,16 @@
+.ws-block-meta-event {
+  .event-date {
+    align-items: flex-end;
+    margin: 0 0 10px;
+    .components-base-control {
+      flex: 0 1 auto;
+      margin: 0 0 10px;
+    }
+    &.no-date {
+      button, .date-display {
+        pointer-events: none;
+        opacity: 0.5;
+      }
+    }
+  }
+}

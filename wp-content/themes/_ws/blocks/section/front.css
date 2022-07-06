@@ -1,0 +1,48 @@
+@import '../../src/css/front/modules/variables.css';
+
+.ws-block-section {
+  &.is-style-narrow {
+    .section-col {
+      @media (--lg-up) {
+        @include col-size(10);
+        @include col-offset(1);
+      }
+      @media (--xl-up) {
+        @include col-size(8);
+        @include col-offset(2);
+      }
+    }
+  }
+  &.is-style-slim {
+    .section-col {
+      @media (--xl-up) {
+        @include col-size(10);
+        @include col-offset(1);
+      }
+    }
+  }
+  &.is-style-wide {
+    .section-container {
+      width: 100%;
+    }
+    .tile-row, .page-row {
+      margin-left: -$container-padding;
+      margin-right: -$container-padding;
+    }
+  }
+  .section-col {
+    > h2, > h3, > h4, > p {
+      max-width: 768px;
+      &.has-text-align-center {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      &.has-text-align-right {
+        margin-left: auto;
+      }
+    }
+    > *:first-child {
+      margin-top: 0;
+    }
+  }
+}

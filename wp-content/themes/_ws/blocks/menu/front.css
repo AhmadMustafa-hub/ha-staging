@@ -1,0 +1,33 @@
+@import '../../src/css/front/modules/variables.css';
+
+.wp-block-ws-menu {
+  ul {
+    list-style: none;
+  }
+  > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    @media (--xs-down) {
+      display: block;
+      a {
+        margin: 5px 0;
+      }
+    }
+    > li {
+      margin: 0;
+    }
+  }
+  a {
+    @include h(4);
+    display: inline-block;
+    padding: 20px 40px;
+    text-decoration: none;
+    color: $text-color;
+    &.current {
+      box-shadow: $shadow;
+      color: $moss;
+    }
+  }
+}

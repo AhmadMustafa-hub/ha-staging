@@ -1,0 +1,14 @@
+@import '../../src/css/admin/modules/variables.css';
+
+.ws-block-social-links {
+  .components-svg-picker {
+    min-width: 0;
+    flex: none;
+    .components-base-control__field {
+      margin-bottom: 0;
+    }
+  }
+  .url-input {
+    margin-bottom: 0;
+  }
+}

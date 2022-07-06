@@ -1,0 +1,79 @@
+@import '../../src/css/front/modules/variables.css';
+
+.ws-block-icon {
+  &.has-text-align-center {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    .icon-svg {
+      margin: 0 auto;
+    }
+  }
+  &.has-text-align-right {
+    .icon-svg {
+      margin: 0 0 0 auto;
+    }
+  }
+  .icon-svg {
+    display: inline-block;
+    &.has-background-color {
+      padding: 25px;
+      border-radius: 50%;
+      position: relative;
+      margin-bottom: 25px;
+    }
+  }
+  .icon-text {
+    > * {
+      margin: 10px 0;
+    }
+  }
+  &.icon-text-right {
+    @media (--sm-up) {
+      display: flex;
+      align-items: center;
+      .icon-text {
+        flex: 1 1 auto;
+        margin: 0 0 0 20px;
+        * {
+          margin: 5px 0;
+        }
+      }
+    }
+  }
+  .size-small {
+    width: 25px;
+    height: 25px;
+  }
+  .size-large {
+    width: 50px;
+    height: 50px;
+  }
+  ~ .ws-block-icon {
+    margin-top: calc($default-margin * 2);
+  }
+  + h4, + h3 {
+    margin-top: calc($default-margin * -0.5);
+    + p {
+      margin-top: calc($default-margin * -0.5);
+    }
+  }
+  @at-root {
+    .svg-animation-container {
+      height: 30px;
+      display: inline-block;
+      svg {
+        display: inline-block;
+      }
+    }
+    svg {
+      @each $hex $color in $colors {
+        &.has-$(color)-color {
+          * {
+            fill: $hex !important;
+          }
+        }
+      }
+    }
+  }
+}

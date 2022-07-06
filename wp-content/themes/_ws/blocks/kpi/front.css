@@ -1,0 +1,15 @@
+@import '../../src/css/front/modules/variables.css';
+
+.wp-block-ws-kpi {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  .kpi-value {
+    @include h(2);
+    color: $ocean;
+    margin: 0;
+  }
+  .kpi-label {
+    margin: 0;
+  }
+}

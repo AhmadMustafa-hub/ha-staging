@@ -1,0 +1,7 @@
+[template='404'], [template=offline] {
+  svg {
+    width: 48px;
+    height: 48px;
+    margin-bottom: $default-margin;
+  }
+}
