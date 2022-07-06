@@ -1,0 +1,50 @@
+@import "../../src/css/front/modules/variables.css";
+
+.wp-block-ws-projects-kpi {
+  margin: 0;
+  + * {
+    margin-top: calc($grid-padding * 2 - $default-margin);
+  }
+  &.is-style-tiles {
+    .container {
+      padding: 0;
+      width: 100%;
+      margin: 0;
+    }
+    .card-row {
+      margin: 0;
+      padding: 0.5px;
+    }
+    .card-container {
+      padding: 0.5px;
+      margin: 0;
+    }
+    .card {
+      box-shadow: none;
+    }
+  }
+  @media (--xs-down) {
+    .horizontal-scroll {
+      width: calc(100% + $container-padding * 2);
+      margin: 0 calc(-1 * $container-padding);
+      padding: 0 calc($container-padding * 0.75);
+      overflow-x: scroll;
+      flex-wrap: nowrap;
+      > * {
+        min-width: 100%;
+        padding: 0 calc($container-padding * 0.25);
+        &:last-child {
+          &::after {
+            content: "";
+            display: block;
+            position: relative;
+            height: 1px;
+            width: $container-padding;
+            margin-top: -1px;
+            left: 100%;
+          }
+        }
+      }
+    }
+  }
+}

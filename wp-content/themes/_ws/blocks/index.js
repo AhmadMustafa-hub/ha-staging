@@ -38,3 +38,5 @@ export { tabbedPanels } from "./tabbed-panels/index.js";
 export { testimonial } from "./testimonial/index.js";
 export { relatedProjects } from "./related-projects/index.js";
 export { tiles } from "./tiles/index.js";
+export { projectsKPI } from "./projects-kpi/index.js";
+export { projectTax } from "./project-taxonomy/index.js";

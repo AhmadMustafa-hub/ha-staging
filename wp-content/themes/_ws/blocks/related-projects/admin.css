@@ -1,0 +1,16 @@
+@import "../../src/css/admin/modules/variables.css";
+.slider {
+  flex-wrap: nowrap !important;
+  margin-bottom: 80px !important;
+}
+.view-all {
+  float: right;
+  display: inline;
+  width: 50%;
+  text-align: right;
+}
+.left-heading {
+  display: inline;
+  width: 50%;
+  float: left;
+}

@@ -1,23 +1,17 @@
 <?php
 function _ws_block_related_projects($a) {
-  $a['className'] = 'wp-block-ws-related-projects ' . ($a['className'] ?? '');
-  $postType = $a['postType'] ?? 'post';
-  $numPosts = $a['numPosts'] ?? 3;
+  $a['className'] = 'wp-block-ws-related-projects slider ' . ($a['className'] ?? '');
+  $postType = 'project';
+  $numPosts = $a['numPosts'] ?? 8;
   $numPosts = isset($a['allPosts']) && $a['allPosts'] ? -1 : $numPosts;
   $taxTerms = $a['taxTerms'] ?? [];
   $horizontalScroll = isset($a['horizontalScroll']) && $a['horizontalScroll'] ? 'horizontal-scroll' : '';
   $type = $postType;
-  if (strpos($a['className'], 'is-style-cards') !== false) {
-    $type = 'card';
-  }
-  if (strpos($a['className'], 'is-style-tiles') !== false) {
-    $type = 'tile';
-  }
-  if (strpos($a['className'], 'is-style-list') !== false) {
-    $type = 'list';
-  }
   ob_start(); ?>
-<div class="row <?= $type; ?>-row <?= $horizontalScroll; ?>">
+<h3 class="left-heading">Related Projects</h3>
+<h3 class="view-all"><a href="#">View All</a></h3>
+<div class="row card-row <?= $horizontalScroll; ?>">
+
     <?php
       $ps = get_posts(_ws_latest_upcoming_build_args($postType, $numPosts, $taxTerms));
       if ($postType === 'event') {
@@ -28,12 +22,16 @@ function _ws_block_related_projects($a) {
       global $post;
       foreach ($ps as $i=>$post) {
         setup_postdata($post);
-        get_template_part('parts/archive', $type);
+        get_template_part('parts/projects', $type);
       }
       wp_reset_postdata(); ?>
+    <div class="buttons"> <button class="btn-slides btn-next-slide">></button>
+        <button class="btn-slides btn-prev-slide">
+            < </button>
+    </div>
 </div>
 <?php
-  return _ws_block_wrapping($a, ob_get_clean(), 'div');
+  return _ws_block_wrapping($a, ob_get_clean(), 'div ');
 }
 
 function _ws_related_projects_build_args($postType, $numPosts, $taxTerms) {

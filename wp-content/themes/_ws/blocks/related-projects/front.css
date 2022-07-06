@@ -48,3 +48,139 @@
     }
   }
 }
+/**Related Projects Styles */
+.project-link {
+  text-transform: uppercase !important;
+  color: #333333 !important;
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  border-bottom: 4px solid #658d1b !important;
+}
+.project-image {
+  width: 450px;
+  height: 130px;
+  padding: 10px;
+}
+.archive-project-slides {
+  margin-bottom: 40px;
+  /* width: 99%; */
+  margin-left: 20px !important;
+}
+.project-title {
+  width: 95% !important;
+  text-align: left !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 21px !important;
+  line-height: 35px !important;
+  margin-top: 12px;
+}
+.btn-slides {
+  position: relative;
+  width: 76px;
+  height: 56px;
+  padding: 2px;
+  border: none;
+  /* border-radius: 50%; */
+  z-index: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 58px;
+  color: #658d1b;
+  margin-top: 75px !important;
+  margin-left: 8px;
+  margin-bottom: 10px;
+}
+.btn-slides:hover,
+.btn-slides:focus {
+  background: transparent;
+  color: #658d1b;
+}
+
+.btn-slides:active {
+  transform: scale(1.1);
+}
+
+.btn-prev-slide {
+  top: 240px;
+  left: 300% !important;
+}
+
+.btn-next-slide {
+  top: 240px;
+  left: 443%;
+}
+.slider {
+  margin-bottom: 10px;
+  width: 98%;
+  /* max-width: 800px; */
+  height: 530px;
+  /* position: relative; */
+  overflow: hidden;
+  margin-left: 24px;
+
+  /* border-radius: 15px;*/
+}
+.slide {
+  width: 77%;
+  /* max-width: 800px; */
+  height: 305px;
+  position: absolute;
+  transition: all 0.5s;
+  margin-top: 27px;
+  padding: 20px -2px 27px;
+}
+.slide:hover {
+  background: #ffffff;
+  box-shadow: 6px 6px 12px rgb(0 0 0 / 15%);
+}
+.view-all {
+  float: right;
+  display: inline;
+  width: 50%;
+  text-align: right;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 16px;
+}
+.view-all a {
+  border-bottom: 4px solid #658d1b !important;
+  text-decoration: none !important;
+}
+.left-heading {
+  display: inline;
+  width: 50%;
+  float: left;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 16px;
+}
+@media (max-width: 768px) {
+  .slide {
+    width: 100%;
+    height: 362px;
+  }
+  .slider {
+    height: 658px;
+  }
+  .left-heading,
+  .view-all {
+    width: 100% !important;
+    height: 2px;
+  }
+  .view-all {
+    float: left;
+    text-align: left;
+  }
+  .btn-prev-slide {
+    top: 300px;
+    left: -31px !important;
+  }
+  .btn-next-slide {
+    top: 300px;
+    left: 139%;
+  }
+}
+/**Related Projects Styles */
